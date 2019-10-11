@@ -1,0 +1,36 @@
+a"Enter n"
+inc 12
+
+out 3
+lit 0
+lit 15
+lit 16
+out 2
+la 0 50
+la 0 54
+in 0
+sto
+out 3
+
+la 0 58
+lit 1
+sto
+
+.loop
+lv 0 58
+lit 1
+out 0
+out 3
+
+la 0 88
+lv 0 58
+lit 1 add
+sto
+
+lv 0 50
+lv 0 58
+rel 2
+fjmp .loop
+
+out 3
+halt
